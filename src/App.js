@@ -26,20 +26,23 @@ export default function App() {
   const [isOpen, setIsOpen] = useState();
 
   return (
-    <div className="app">
-      <aside className="sidebar">
-        <Friends isOpen={isOpen} setIsOpen={setIsOpen} friends={friends} />
-        <AddFriend setFriends={setFriends} friends={friends} />
-      </aside>
-      {isOpen && (
-        <SplitBill
-          isOpen={isOpen}
-          friends={friends}
-          setIsOpen={setIsOpen}
-          setFriends={setFriends}
-        />
-      )}
-    </div>
+    <>
+      <div className="app">
+        <aside className="sidebar">
+          <Friends isOpen={isOpen} setIsOpen={setIsOpen} friends={friends} />
+          <AddFriend setFriends={setFriends} friends={friends} />
+        </aside>
+        {isOpen && (
+          <SplitBill
+            isOpen={isOpen}
+            friends={friends}
+            setIsOpen={setIsOpen}
+            setFriends={setFriends}
+          />
+        )}
+      </div>
+      <Footer></Footer>
+    </>
   );
 }
 
@@ -196,13 +199,13 @@ function Friend({ id, name, image, balance, isOpen, setIsOpen, index }) {
       <h3>{name}</h3>
       {balance > 0 ? (
         <p className="green">
-          {name} owes you {balance}€
+          {name} owes you <span className="bold">{balance}</span>€
         </p>
       ) : balance === 0 ? (
         <p>You and {name} are even</p>
       ) : (
         <p className="red">
-          You owe {name} {Math.abs(balance)}€
+          You owe {name} <span className="bold">{Math.abs(balance)}</span>€
         </p>
       )}
       <Button onClick={handleClick}>
@@ -217,5 +220,21 @@ function Button({ onClick, children }) {
     <button className="button" onClick={onClick}>
       {children}
     </button>
+  );
+}
+
+function Footer() {
+  return (
+    <footer className="footer">
+      <p>
+        Made with ❤️ by{" "}
+        <a href="https://github.com/Mo3bassia" target="_blank">
+          Mo3bassia
+        </a>
+      </p>
+      <p>
+        Built using <strong>React</strong>. Feel free to explore and connect!
+      </p>
+    </footer>
   );
 }

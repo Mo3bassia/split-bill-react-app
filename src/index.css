@@ -28,9 +28,25 @@ body {
 .app {
   min-height: 66vh;
   display: grid;
-  grid-template-columns: 34rem 44rem;
+  grid-template-columns: 1fr; /* Default to single column */
   column-gap: 4rem;
   align-items: start;
+  align-content: center;
+  position: relative;
+  z-index: 1;
+  align-items: center;
+}
+.sidebar {
+  margin-bottom: 30px;
+}
+
+@media (min-width: 828px) {
+  .app {
+    grid-template-columns: 34rem 44rem; /* Two columns for larger screens */
+  }
+  .sidebar {
+    margin-bottom: 0;
+  }
 }
 
 .button {
@@ -62,7 +78,6 @@ body {
   grid-template-columns: 4.8rem 1fr auto;
   align-items: center;
   column-gap: 1.6rem;
-
   padding: 1.2rem;
   border-radius: 7px;
   transition: 0.5s;
@@ -112,7 +127,6 @@ form {
   display: grid;
   align-items: center;
   gap: 1.2rem;
-
   background-color: var(--color-lightest);
   border-radius: 7px;
 }
@@ -122,6 +136,7 @@ form {
   margin-bottom: 1.6rem;
   padding: 1.2rem;
 }
+
 .form-split-bill {
   grid-template-columns: 1fr 12rem;
   padding: 3.2rem 4rem;
@@ -166,4 +181,34 @@ form h2 {
   text-transform: uppercase;
   letter-spacing: -0.5px;
   margin-bottom: 1.6rem;
+}
+.footer {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 1.4rem;
+  color: #6c757d;
+  background-color: #ffffff;
+  padding: 10px 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  text-align: center;
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.footer a {
+  color: var(--color-dark);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+.footer:hover {
+  background-color: #f1f1f1;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
