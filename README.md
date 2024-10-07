@@ -1,70 +1,32 @@
-# Getting Started with Create React App
+# Split Bill App 💸
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+[![Live Preview](./public/preview.png)](https://dish-divide-mo3bassias-projects.vercel.app)
 
-## Available Scripts
+Welcome to the Split Bill App! 🎉 This is a simple yet powerful React application that helps users manage their friends 👥 and effortlessly split bills 💰 among them. Perfect for group outings, shared expenses, and keeping track of who owes what! 🧾
 
-In the project directory, you can run:
+## Features 🌟
 
-### `npm start`
+- 🌟 **View Friends:** Display a list of friends with their names, images, and current balance owed. 👀
+- ➕ **Add Friends:** Easily add new friends with a customizable name and image URL.
+- ⚖️ **Split Bills:** Calculate and divide bills between yourself and a selected friend in a user-friendly interface.
+- 🔄 **Dynamic Balance Update:** Automatically updates each friend's balance based on contributions, ensuring everyone knows their standing.
+- 📱💻 **Responsive Design:** Works seamlessly on different screen sizes for both desktop and mobile users.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Technologies Used 🛠️
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- ⚛️ **React:** A JavaScript library for building user interfaces.
+- 📦 **useState:** React Hook for managing state in functional components.
+- 🎨 **CSS:** For styling the application, ensuring a clean and attractive look.
 
-### `npm test`
+## Learning Journey 📚
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+This project marks the beginning of my journey in learning React. 🚀 I plan to explore more features such as:
 
-### `npm run build`
+- 🔐 **User Authentication:** Implement user accounts for personalized experience.
+- 💾 **Persistent Data Storage:** Utilize local storage or a database for saving friend and bill data across sessions.
+- ✨ **Enhanced UI/UX:** Focus on improving user interface and user experience for better interaction.
+- 🔔 **Notifications:** Implement a notification system for bill reminders.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Live Demo 🌐
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- [Live Preview Here](https://dish-divide-mo3bassias-projects.vercel.app)
